@@ -1,0 +1,28 @@
+# apt - Advanced Packaging Tool
+
+- apt（Advanced Packaging Tool）是一个在 Debian 和 Ubuntu 中的软件包管理器。
+- apt 命令提供了查找、安装、升级、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。
+- apt 命令执行需要超级管理员权限(root)。
+- apt 的出现是为了解决命令过于分散的问题，可以理解为 `apt-get, apt-cache, apt-config` 中常用命令的集合。
+
+# apt 语法
+
+```shell
+ apt [options] [command] [package ...]
+```
+
+# apt 常用命令
+
+- 帮助：apt -h
+- 查看已安装：`apt list --installed`
+- 查看可更新：`apt list --upgradeable`
+- 升级：`sudo apt upgrade`
+- 清理不再使用的依赖和库文件: `sudo apt autoremove`
+- 删除软件包命令：`sudo apt remove <package_name>`
+- 移除软件包及配置文件: `sudo apt purge <package_name>`
+- 查看某个包详细信息：sudo apt show <package_name>
+
+# 参考链接
+
+1. https://www.runoob.com/linux/linux-comm-apt.html
+2. https://www.sysgeek.cn/apt-vs-apt-get/
